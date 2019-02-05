@@ -473,7 +473,7 @@ header .menu--open {
   flex-direction: column;
   margin: 0 auto;
   padding: 4rem;
-  width: 60%;
+  width: 80%;
   background-color: #bebebe;
   z-index: 2;
   border-right: 0.2rem solid black;
@@ -508,6 +508,7 @@ header .menu--open {
 }
 @media (min-width:800px) {
   .prison-body .bottom-p {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -518,11 +519,11 @@ header .menu--open {
 }
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 0;
   background-color: black;
 }
 footer .icon {
-  width: 60%;
+  width: 27rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
