@@ -165,7 +165,7 @@ img {
 }
 header {
   width: 100%;
-  height: 4rem;
+  height: 7rem;
   background-color: grey;
   color: white;
   display: flex;
@@ -176,21 +176,21 @@ header {
   margin: auto 0;
 }
 header img {
-  width: 6%;
+  width: 4rem;
   margin-right: 2rem;
   cursor: pointer;
+  padding: 1rem 0;
 }
 header .menu {
   display: none;
   position: fixed;
-  min-width: 500px;
+  min-width: 100%;
   height: 100vh;
   z-index: 10;
   background-color: rgba(79, 79, 79, 0.906);
 }
 header .menu ul li {
-  list-style-type: none;
-  font-size: 32px;
+  font-size: 3rem;
   padding: 30px 0;
   text-align: center;
 }
@@ -198,6 +198,18 @@ header .menu .exit {
   display: flex;
   flex-direction: row-reverse;
   margin: 2rem 4rem 0 0;
+  cursor: pointer;
+}
+header .menu .center {
+  display: flex;
+  text-align: center;
+  padding: 30px 0;
+}
+header .menu .center button {
+  margin: 0 auto;
+  width: 25%;
+  font-size: 3rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 header .menu--open {
@@ -209,7 +221,7 @@ header .menu--open {
   justify-content: space-around;
 }
 .prison-body .page-title {
-  margin: 6rem 4rem;
+  margin: 10rem 4rem 6rem;
 }
 .prison-body .page-title h1 {
   border-bottom: 0.2rem solid black;
@@ -221,32 +233,55 @@ header .menu--open {
   width: 50%;
   font-size: 1.8rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 .prison-body .prison-blocks {
   margin: 1rem 0;
 }
+@media (min-width:800px) {
+  .prison-body .prison-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+  }
+}
 .prison-body .prison-blocks .box {
-  padding: 10rem 20rem 10rem 4rem;
+  padding: 10rem 0 10rem 4rem;
   width: 100%;
   flex-direction: column;
   border-top: 0.2rem solid black;
   border-right: 0.2rem solid black;
   border-left: 0.2rem solid black;
 }
+@media (min-width:800px) {
+  .prison-body .prison-blocks .box {
+    width: 50%;
+    border-top: 0.2rem solid black;
+    border-right: 0.2rem solid black;
+    border-left: 0 solid black;
+  }
+}
 .prison-body .prison-blocks .box h2 {
   font-size: 2.8rem;
   padding-bottom: 2rem;
   border-bottom: 0.2rem solid black;
   margin-bottom: 2rem;
+  width: 70%;
 }
 .prison-body .prison-blocks .box-6 {
   border-bottom: 0.2rem solid black;
+}
+@media (min-width:800px) {
+  .prison-body .prison-blocks .box-6 {
+    border-bottom: 0 solid black;
+  }
 }
 .prison-body .bottom-p {
   margin: 4rem;
 }
 .prison-body .bottom-p h2 {
-  width: 20%;
+  width: 30%;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: 0.2rem solid black;
@@ -256,6 +291,7 @@ header .menu--open {
   width: 50%;
   font-size: 1.8rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 footer {
   text-align: center;

@@ -2,8 +2,9 @@
     display: flex-column;
     flex-wrap: wrap;
     justify-content: space-around;
+   
     .page-title {
-        margin: 6rem 4rem;
+        margin: 10rem 4rem 6rem;
         h1{
         border-bottom: .2rem solid black;
         margin-bottom: 2rem;
@@ -14,33 +15,54 @@
             width: 50%;
             font-size: 1.8rem;
             border-radius: 10px;
+            cursor: pointer;
         }
     }
     .prison-blocks{
         margin: 1rem 0;
+        @media @tablet{
+            display:flex;
+            flex-wrap: wrap;
+            border-left: .2rem solid black;
+            border-bottom: .2rem solid black;
+
+        }
         .box{
-            padding: 10rem 20rem 10rem 4rem;
+            padding: 10rem 0 10rem 4rem;
             width: 100%;
             flex-direction: column;
             border-top: .2rem solid black;
             border-right: .2rem solid black;
             border-left: .2rem solid black;
+            @media @tablet{
+                
+                width: 50%;
+                border-top: .2rem solid black;
+                border-right: .2rem solid black;
+                border-left: 0 solid black;
+            }
             h2{
                 font-size: 2.8rem;
                 padding-bottom:2rem;
                 border-bottom: .2rem solid black;
                 margin-bottom:2rem;
+                
+                    width:70%;
+                
             }
         }
         .box-6{
             border-bottom: .2rem solid black;
-
+            @media @tablet{
+                border-bottom: 0 solid black;
+            }
         }
+       
     }
     .bottom-p{
         margin:4rem;
         h2{
-            width:20%;
+            width:30%;
             padding-bottom:2rem;
             margin-bottom:2rem;
             border-bottom:.2rem solid black;
@@ -50,6 +72,8 @@
             width: 50%;
             font-size: 1.8rem;
             border-radius: 10px;
+            cursor: pointer;
+
         }
     }
 }
