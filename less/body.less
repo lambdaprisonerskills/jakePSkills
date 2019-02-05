@@ -9,13 +9,20 @@
         border-bottom: .2rem solid black;
         margin-bottom: 2rem;
         padding-bottom:2rem;
+        
         }
         button{
             height:4rem;
-            width: 50%;
+            width: 40%;
             font-size: 1.8rem;
             border-radius: 10px;
             cursor: pointer;
+        }
+        @media @desktop{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            
         }
     }
     .prison-blocks{
@@ -25,7 +32,6 @@
             flex-wrap: wrap;
             border-left: .2rem solid black;
             border-bottom: .2rem solid black;
-
         }
         .box{
             padding: 10rem 0 10rem 4rem;
@@ -34,25 +40,61 @@
             border-top: .2rem solid black;
             border-right: .2rem solid black;
             border-left: .2rem solid black;
-            @media @tablet{
-                
+            color:white;
+            text-shadow: .15rem .15rem black;
+
+            @media @tablet{  
                 width: 50%;
                 border-top: .2rem solid black;
                 border-right: .2rem solid black;
                 border-left: 0 solid black;
             }
+            @media @desktop{
+                height:45rem;
+                padding: 15rem 4rem 0 4rem;;
+            }
+
             h2{
                 font-size: 2.8rem;
                 padding-bottom:2rem;
-                border-bottom: .2rem solid black;
+                border-bottom: .2rem solid white;
                 margin-bottom:2rem;
                 
                     width:70%;
                 
             }
         }
+        .box-1{
+            background-image: url("../img/builder.jpg");
+
+        }
+        .box-2{
+            background-image: url("../img/construction.jpg");
+
+        }
+        .box-3{
+            background-image: url("../img/construction.jpg");
+
+        }
+        .box-4{
+            background-image: url("../img/construction.jpg");
+
+        }
+        .box-5{
+            background-image: url("../img/construction.jpg");
+
+        }
         .box-6{
             border-bottom: .2rem solid black;
+            background-image: url("../img/construction.jpg");
+            h2{
+                text-shadow: .15rem .15rem black;
+                border-bottom: .2rem solid white;
+
+            } 
+            p{
+            text-shadow: .1rem .1rem black;
+            }
             @media @tablet{
                 border-bottom: 0 solid black;
             }
@@ -66,14 +108,22 @@
             padding-bottom:2rem;
             margin-bottom:2rem;
             border-bottom:.2rem solid black;
+            @media @desktop{
+                text-align:center;
+            }
         }
         button{
             height:4rem;
-            width: 50%;
+            width: 40%;
             font-size: 1.8rem;
             border-radius: 10px;
             cursor: pointer;
 
+        }
+        @media @desktop{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

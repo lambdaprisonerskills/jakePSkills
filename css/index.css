@@ -162,6 +162,7 @@ img {
   min-width: 500px;
   width: 100%;
   margin: 0 auto;
+  z-index: 5;
 }
 header {
   width: 100%;
@@ -193,6 +194,14 @@ header .menu ul li {
   font-size: 3rem;
   padding: 30px 0;
   text-align: center;
+  cursor: pointer;
+}
+header .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .menu li:hover {
+  background-color: black;
 }
 header .menu .exit {
   display: flex;
@@ -230,10 +239,17 @@ header .menu--open {
 }
 .prison-body .page-title button {
   height: 4rem;
-  width: 50%;
+  width: 40%;
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
+}
+@media (min-width:1920px) {
+  .prison-body .page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .prison-body .prison-blocks {
   margin: 1rem 0;
@@ -253,6 +269,8 @@ header .menu--open {
   border-top: 0.2rem solid black;
   border-right: 0.2rem solid black;
   border-left: 0.2rem solid black;
+  color: white;
+  text-shadow: 0.15rem 0.15rem black;
 }
 @media (min-width:800px) {
   .prison-body .prison-blocks .box {
@@ -262,15 +280,44 @@ header .menu--open {
     border-left: 0 solid black;
   }
 }
+@media (min-width:1920px) {
+  .prison-body .prison-blocks .box {
+    height: 45rem;
+    padding: 15rem 4rem 0 4rem;
+  }
+}
 .prison-body .prison-blocks .box h2 {
   font-size: 2.8rem;
   padding-bottom: 2rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid white;
   margin-bottom: 2rem;
   width: 70%;
 }
+.prison-body .prison-blocks .box-1 {
+  background-image: url("../img/builder.jpg");
+}
+.prison-body .prison-blocks .box-2 {
+  background-image: url("../img/construction.jpg");
+}
+.prison-body .prison-blocks .box-3 {
+  background-image: url("../img/construction.jpg");
+}
+.prison-body .prison-blocks .box-4 {
+  background-image: url("../img/construction.jpg");
+}
+.prison-body .prison-blocks .box-5 {
+  background-image: url("../img/construction.jpg");
+}
 .prison-body .prison-blocks .box-6 {
   border-bottom: 0.2rem solid black;
+  background-image: url("../img/construction.jpg");
+}
+.prison-body .prison-blocks .box-6 h2 {
+  text-shadow: 0.15rem 0.15rem black;
+  border-bottom: 0.2rem solid white;
+}
+.prison-body .prison-blocks .box-6 p {
+  text-shadow: 0.1rem 0.1rem black;
 }
 @media (min-width:800px) {
   .prison-body .prison-blocks .box-6 {
@@ -286,13 +333,36 @@ header .menu--open {
   margin-bottom: 2rem;
   border-bottom: 0.2rem solid black;
 }
+@media (min-width:1920px) {
+  .prison-body .bottom-p h2 {
+    text-align: center;
+  }
+}
 .prison-body .bottom-p button {
   height: 4rem;
-  width: 50%;
+  width: 40%;
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
 }
+@media (min-width:1920px) {
+  .prison-body .bottom-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer {
   text-align: center;
+  margin: 2rem;
+}
+footer .icon {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  cursor: pointer;
+}
+footer p {
+  margin-top: 2rem;
 }
