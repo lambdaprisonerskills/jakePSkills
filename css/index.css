@@ -230,10 +230,12 @@ header .menu--open {
   justify-content: space-around;
 }
 .prison-body .page-title {
-  margin: 10rem 4rem 6rem;
+  padding: 10rem 4rem 6rem;
+  background-color: black;
+  color: white;
 }
 .prison-body .page-title h1 {
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid white;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
@@ -250,9 +252,6 @@ header .menu--open {
     flex-direction: column;
     align-items: center;
   }
-}
-.prison-body .prison-blocks {
-  margin: 1rem 0;
 }
 @media (min-width:800px) {
   .prison-body .prison-blocks {
@@ -297,16 +296,16 @@ header .menu--open {
   background-image: url("../img/builder.jpg");
 }
 .prison-body .prison-blocks .box-2 {
-  background-image: url("../img/construction.jpg");
+  background-image: url("../img/worker.jpg");
 }
 .prison-body .prison-blocks .box-3 {
-  background-image: url("../img/construction.jpg");
+  background-image: url("../img/sky.jpg");
 }
 .prison-body .prison-blocks .box-4 {
-  background-image: url("../img/construction.jpg");
+  background-image: url("../img/auto.jpg");
 }
 .prison-body .prison-blocks .box-5 {
-  background-image: url("../img/construction.jpg");
+  background-image: url("../img/weld.jpg");
 }
 .prison-body .prison-blocks .box-6 {
   border-bottom: 0.2rem solid black;
@@ -325,7 +324,10 @@ header .menu--open {
   }
 }
 .prison-body .bottom-p {
-  margin: 4rem;
+  margin-top: 4rem;
+  padding: 0 4rem 4rem;
+  background-image: url("../img/page.jpg");
+  text-shadow: 0.15rem 0.15rem white;
 }
 .prison-body .bottom-p h2 {
   width: 30%;
@@ -344,6 +346,8 @@ header .menu--open {
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 @media (min-width:1920px) {
   .prison-body .bottom-p {
@@ -354,15 +358,25 @@ header .menu--open {
 }
 footer {
   text-align: center;
-  margin: 2rem;
+  padding: 2rem;
+  background-color: black;
 }
 footer .icon {
-  width: 40%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   cursor: pointer;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 6px;
+}
+@media (min-width:800px) {
+  footer .icon {
+    width: 40%;
+  }
 }
 footer p {
   margin-top: 2rem;
+  color: white;
 }
