@@ -159,15 +159,14 @@ img {
   height: auto;
 }
 .container {
-  min-width: 500px;
+  min-width: 300px;
   width: 100%;
   margin: 0 auto;
-  z-index: 5;
 }
 header {
   width: 100%;
   height: 7rem;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.8);
   color: white;
   display: flex;
   position: fixed;
@@ -221,17 +220,20 @@ header .menu .center button {
   border-radius: 10px;
   cursor: pointer;
 }
+header .menu .center button a {
+  text-decoration: none;
+  color: black;
+}
 header .menu--open {
   display: block;
 }
 .prison-body {
-  display: flex-column;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: black;
 }
 .prison-body .page-title {
   padding: 10rem 4rem 6rem;
-  background-color: black;
   color: white;
 }
 .prison-body .page-title h1 {
@@ -240,17 +242,24 @@ header .menu--open {
   padding-bottom: 2rem;
 }
 .prison-body .page-title button {
+  margin-top: 4rem;
   height: 4rem;
   width: 40%;
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
 }
-@media (min-width:1920px) {
+.prison-body .page-title button a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width:800px) {
   .prison-body .page-title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 75%;
+    margin: 0 auto;
   }
 }
 @media (min-width:800px) {
@@ -268,8 +277,8 @@ header .menu--open {
   border-top: 0.2rem solid black;
   border-right: 0.2rem solid black;
   border-left: 0.2rem solid black;
-  color: white;
-  text-shadow: 0.15rem 0.15rem black;
+  color: black;
+  background-color: #bebebe;
 }
 @media (min-width:800px) {
   .prison-body .prison-blocks .box {
@@ -279,55 +288,105 @@ header .menu--open {
     border-left: 0 solid black;
   }
 }
-@media (min-width:1920px) {
+@media (min-width:1400px) {
   .prison-body .prison-blocks .box {
-    height: 45rem;
-    padding: 15rem 4rem 0 4rem;
+    padding: 15rem 4rem 10rem 4rem;
+    width: 33.3333333%;
   }
 }
 .prison-body .prison-blocks .box h2 {
   font-size: 2.8rem;
   padding-bottom: 2rem;
-  border-bottom: 0.2rem solid white;
+  border-bottom: 0.2rem solid black;
   margin-bottom: 2rem;
   width: 70%;
 }
-.prison-body .prison-blocks .box-1 {
-  background-image: url("../img/builder.jpg");
-}
-.prison-body .prison-blocks .box-2 {
-  background-image: url("../img/worker.jpg");
-}
-.prison-body .prison-blocks .box-3 {
-  background-image: url("../img/sky.jpg");
-}
-.prison-body .prison-blocks .box-4 {
-  background-image: url("../img/auto.jpg");
-}
-.prison-body .prison-blocks .box-5 {
-  background-image: url("../img/weld.jpg");
-}
-.prison-body .prison-blocks .box-6 {
-  border-bottom: 0.2rem solid black;
-  background-image: url("../img/construction.jpg");
-}
-.prison-body .prison-blocks .box-6 h2 {
+.prison-body .prison-blocks .box-1:hover {
+  transition-duration: 2s;
   text-shadow: 0.15rem 0.15rem black;
+  background-image: url("../img/builder.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prison-body .prison-blocks .box-1:hover h2 {
   border-bottom: 0.2rem solid white;
 }
-.prison-body .prison-blocks .box-6 p {
-  text-shadow: 0.1rem 0.1rem black;
+.prison-body .prison-blocks .box-2:hover {
+  transition-duration: 2s;
+  text-shadow: 0.15rem 0.15rem black;
+  background-image: url("../img/worker.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prison-body .prison-blocks .box-2:hover h2 {
+  border-bottom: 0.2rem solid white;
+}
+.prison-body .prison-blocks .box-3:hover {
+  transition-duration: 2s;
+  text-shadow: 0.15rem 0.15rem black;
+  background-image: url("../img/sky.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prison-body .prison-blocks .box-3:hover h2 {
+  border-bottom: 0.2rem solid white;
+}
+.prison-body .prison-blocks .box-4:hover {
+  transition-duration: 2s;
+  text-shadow: 0.15rem 0.15rem black;
+  background-image: url("../img/auto.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prison-body .prison-blocks .box-4:hover h2 {
+  border-bottom: 0.2rem solid white;
+}
+.prison-body .prison-blocks .box-5:hover {
+  transition-duration: 2s;
+  text-shadow: 0.15rem 0.15rem black;
+  background-image: url("../img/weld.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prison-body .prison-blocks .box-5:hover h2 {
+  border-bottom: 0.2rem solid white;
+}
+.prison-body .prison-blocks .box-6:hover {
+  transition-duration: 2s;
+  text-shadow: 0.15rem 0.15rem black;
+  background-image: url("../img/construction.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.prison-body .prison-blocks .box-6:hover h2 {
+  border-bottom: 0.2rem solid white;
 }
 @media (min-width:800px) {
-  .prison-body .prison-blocks .box-6 {
+  .prison-body .prison-blocks .box-6:hover {
     border-bottom: 0 solid black;
   }
 }
-.prison-body .bottom-p {
-  margin-top: 4rem;
-  padding: 0 4rem 4rem;
+.prison-body .image-container {
   background-image: url("../img/page.jpg");
-  text-shadow: 0.15rem 0.15rem white;
+  background-size: cover;
+  border-top: 0.2rem solid black;
+}
+.prison-body .bottom-p {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 60%;
+  background-color: #bebebe;
+  z-index: 2;
+  border-right: 0.2rem solid black;
+  border-left: 0.2rem solid black;
 }
 .prison-body .bottom-p h2 {
   width: 30%;
@@ -335,7 +394,7 @@ header .menu--open {
   margin-bottom: 2rem;
   border-bottom: 0.2rem solid black;
 }
-@media (min-width:1920px) {
+@media (min-width:800px) {
   .prison-body .bottom-p h2 {
     text-align: center;
   }
@@ -346,10 +405,11 @@ header .menu--open {
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+  border: 0.2rem solid black;
 }
-@media (min-width:1920px) {
+@media (min-width:800px) {
   .prison-body .bottom-p {
     display: flex;
     flex-direction: column;

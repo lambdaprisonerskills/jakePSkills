@@ -1,11 +1,10 @@
 .prison-body{
-    display: flex-column;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+    background-color: black;
+    
     .page-title {
         padding: 10rem 4rem 6rem;
-        background-color: black;
         color:white;
         h1{
         border-bottom: .2rem solid white;
@@ -13,17 +12,23 @@
         padding-bottom:2rem;
         }
         button{
+            margin-top:4rem;
             height:4rem;
             width: 40%;
             font-size: 1.8rem;
             border-radius: 10px;
             cursor: pointer;
+            a{
+                text-decoration: none;
+                color:black;
+            }
         }
-        @media @desktop{
+        @media @tablet{
             display:flex;
             flex-direction: column;
             align-items: center;
-            
+            width:75%;
+            margin:0 auto;
         }
     }
     .prison-blocks{
@@ -41,9 +46,10 @@
             border-top: .2rem solid black;
             border-right: .2rem solid black;
             border-left: .2rem solid black;
-            color:white;
-            text-shadow: .15rem .15rem black;
+            color:black;
+            background-color:rgb(190, 190, 190);
 
+            
             @media @tablet{  
                 width: 50%;
                 border-top: .2rem solid black;
@@ -51,70 +57,158 @@
                 border-left: 0 solid black;
             }
             @media @desktop{
-                height:45rem;
-                padding: 15rem 4rem 0 4rem;;
+                padding: 15rem 4rem 10rem 4rem;
+                width: 33.3333333%;
             }
 
             h2{
                 font-size: 2.8rem;
                 padding-bottom:2rem;
-                border-bottom: .2rem solid white;
+                border-bottom: .2rem solid black;
                 margin-bottom:2rem;
-                
-                    width:70%;
+                width:70%;
                 
             }
         }
         .box-1{
+            @media @tablet{
+                
+            }
+        }
+        .box-1:hover{
+            transition-duration: 2s;
+            
+            text-shadow: .15rem .15rem black;
             background-image: url("../img/builder.jpg");
-
-        }
-        .box-2{
-            background-image: url("../img/worker.jpg");
-
-        }
-        .box-3{
-            background-image: url("../img/sky.jpg");
-
-        }
-        .box-4{
-            background-image: url("../img/auto.jpg");
-
-        }
-        .box-5{
-            background-image: url("../img/weld.jpg");
-
-        }
-        .box-6{
-            border-bottom: .2rem solid black;
-            background-image: url("../img/construction.jpg");
+            color:white;
+            background-position: center;
+            background-repeat: no-repeat;
             h2{
-                text-shadow: .15rem .15rem black;
                 border-bottom: .2rem solid white;
 
-            } 
-            p{
-            text-shadow: .1rem .1rem black;
             }
+        }
+        .box-2{
+            @media @tablet{
+                
+            }
+        }
+        .box-2:hover{
+            transition-duration: 2s;
+
+            text-shadow: .15rem .15rem black;
+            background-image: url("../img/worker.jpg");
+            color:white;
+            background-position: center;
+            background-repeat: no-repeat;
+            h2{
+                border-bottom: .2rem solid white;
+
+            }
+        }
+        .box-3{
+            @media @tablet{
+                
+            }
+        }
+        .box-3:hover{
+            transition-duration: 2s;
+
+            text-shadow: .15rem .15rem black;
+            background-image: url("../img/sky.jpg");
+            color:white;
+            background-position: center;
+            background-repeat: no-repeat;
+            h2{
+                border-bottom: .2rem solid white;
+
+            }
+        }
+        .box-4{
+            @media @tablet{
+                
+            }
+        }
+        .box-4:hover{
+            transition-duration: 2s;
+
+            text-shadow: .15rem .15rem black;
+            background-image: url("../img/auto.jpg");
+            color:white;
+            background-position: center;
+            background-repeat: no-repeat;
+            h2{
+                border-bottom: .2rem solid white;
+
+            }
+        }
+        .box-5{
+            @media @tablet{
+                
+            }
+        }
+        .box-5:hover{
+            transition-duration: 2s;
+
+            text-shadow: .15rem .15rem black;
+            background-image: url("../img/weld.jpg");
+            color:white;
+            background-position: center;
+            background-repeat: no-repeat;
+            h2{
+                border-bottom: .2rem solid white;
+
+            }
+        }
+        .box-6{
+            @media @tablet{
+                
+            }
+        }
+            .box-6:hover{
+                transition-duration: 2s;
+                text-shadow: .15rem .15rem black;
+                background-image: url("../img/construction.jpg");
+                color:white;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+                h2{
+                    border-bottom: .2rem solid white;
+    
+                }
+            
             @media @tablet{
                 border-bottom: 0 solid black;
             }
-        }
+        } 
+        
        
     }
+.image-container{
+    background-image: url("../img/page.jpg");
+    background-size: cover;
+    border-top: .2rem solid black;
+
+}
     .bottom-p{
-        margin-top: 4rem;
-        padding: 0 4rem 4rem;
-        background-image: url("../img/page.jpg");
-        text-shadow:.15rem .15rem white;
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 4rem;
+        width:60%;
+        background-color:rgb(190, 190, 190);
+        z-index: 2;
+        border-right: .2rem solid black;
+        border-left: .2rem solid black;
 
         h2{
             width:30%;
             padding-bottom:2rem;
             margin-bottom:2rem;
             border-bottom:.2rem solid black;
-            @media @desktop{
-                text-align:center;
+            @media @tablet{
+                text-align: center;            
             }
         }
         button{
@@ -123,13 +217,15 @@
             font-size: 1.8rem;
             border-radius: 10px;
             cursor: pointer;
-            background-color:black;
-            color:white; 
-
+            background-color:white;
+            color:black; 
+            border:.2rem solid black;
         }
-        @media @desktop{
+
+        @media @tablet{
             display:flex;
             flex-direction: column;
+            align-items: center;
             align-items: center;
         }
     }
