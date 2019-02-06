@@ -210,7 +210,12 @@ header .menu .center {
   text-align: center;
   padding: 30px 0;
 }
-header .menu .center button {
+header .menu .center a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+header .menu .center a button {
   margin: 0 auto;
   width: 25%;
   font-size: 3rem;
@@ -218,9 +223,10 @@ header .menu .center button {
   cursor: pointer;
   height: 6rem;
 }
-header .menu .center button a {
-  text-decoration: none;
-  color: black;
+header .menu .center a button:hover {
+  background-color: black;
+  border: 0.2rem solid #df8e02;
+  color: #df8e02;
 }
 header ::-webkit-scrollbar {
   width: 0px;
@@ -240,12 +246,16 @@ header .menu--open {
   background-position: center;
 }
 .prison-body .page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 10rem 4rem 6rem;
   color: white;
 }
 .prison-body .page-title h1 {
-  border-bottom: 1rem solid white;
-  border-top: 1rem solid white;
+  border-bottom: 1rem solid #73acda;
+  border-top: 1rem solid #73acda;
   margin-bottom: 2rem;
   padding: 2rem 0;
   font-weight: bold;
@@ -253,31 +263,23 @@ header .menu--open {
 .prison-body .page-title button {
   margin-top: 4rem;
   height: 6rem;
-  width: 12rem;
+  width: 22rem;
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
-}
-.prison-body .page-title button a {
-  text-decoration: none;
-  color: black;
+  border: 0.2rem solid black;
 }
 .prison-body .page-title button:hover {
   background-color: black;
-  border: 0.2rem solid #df8e02;
-}
-.prison-body .page-title button:hover a {
-  color: #df8e02;
+  border: 0.2rem solid white;
+  color: white;
 }
 @media (min-width:800px) {
   .prison-body .page-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 75%;
     margin: 0 auto;
   }
-  .prison-body .page-title button {
+  .prison-body .page-title a {
     width: 40%;
   }
 }
@@ -437,35 +439,35 @@ header .menu--open {
   }
 }
 .prison-body .prison-blocks .box {
-  padding: 10rem 3rem 10rem 4rem;
+  padding: 7rem 3rem 7rem 4rem;
   width: 100%;
   flex-direction: column;
-  border: 0.4rem solid black;
+  border: 0.2rem solid black;
   color: black;
-  background-color: #bebebe;
-  filter: blur(0.15rem);
+  background-color: #73acda;
 }
 @media (min-width:800px) {
   .prison-body .prison-blocks .box {
     width: 50%;
+    filter: blur(0.15rem);
   }
 }
 @media (min-width:1600px) {
   .prison-body .prison-blocks .box {
-    padding: 15rem 4rem 10rem 4rem;
+    padding: 10rem 4rem 10rem 4rem;
     width: 33.3333333%;
   }
 }
 .prison-body .prison-blocks .box h2 {
   font-size: 2.8rem;
   padding-bottom: 2rem;
-  border-bottom: 0.5rem solid #df8e02;
+  border-bottom: 0.5rem solid white;
   margin-bottom: 2rem;
   width: 70%;
 }
 .prison-body .prison-blocks .box p a {
   text-decoration: none;
-  color: #df8e02;
+  color: white;
 }
 .prison-body .prison-blocks .box p span {
   font-size: 1.2rem;
@@ -506,25 +508,29 @@ header .menu--open {
   margin: 0 auto;
   padding: 4rem;
   width: 80%;
-  background-color: #bebebe;
+  background-color: #7b7b7b;
   z-index: 2;
-  border-right: 5rem solid white;
-  border-left: 5rem solid white;
+  border-right: 0.4rem solid #73acda;
+  border-left: 0.4rem solid #73acda;
 }
 .prison-body .bottom-p h2 {
-  width: 30%;
+  width: 100%;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 1rem solid #df8e02;
+  border-bottom: 0.7rem dashed white;
+  text-shadow: 0 0 0.2rem #73acda;
 }
 @media (min-width:800px) {
   .prison-body .bottom-p h2 {
     text-align: center;
   }
 }
+.prison-body .bottom-p p {
+  text-shadow: 0 0 0.001rem #73acda;
+}
 .prison-body .bottom-p button {
   height: 6rem;
-  width: 10rem;
+  width: 16rem;
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
@@ -535,8 +541,8 @@ header .menu--open {
 }
 .prison-body .bottom-p button:hover {
   background-color: black;
-  color: #df8e02;
-  border: 0.2rem solid #df8e02;
+  color: white;
+  border: 0.2rem solid white;
 }
 @media (min-width:800px) {
   .prison-body .bottom-p {
@@ -555,13 +561,11 @@ footer {
   background-color: black;
 }
 footer .icon {
-  width: 27rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   cursor: pointer;
   background-color: white;
-  border-radius: 6px;
 }
 footer .icon i {
   color: black;
@@ -569,11 +573,12 @@ footer .icon i {
 }
 footer .icon i:hover {
   background-color: black;
-  color: #df8e02;
+  color: #73acda;
 }
 @media (min-width:800px) {
   footer .icon {
     width: 40%;
+    border-radius: 1rem;
   }
 }
 footer p {
