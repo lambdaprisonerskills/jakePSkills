@@ -59,18 +59,14 @@
             padding: 10rem 3rem 10rem 4rem;
             width: 100%;
             flex-direction: column;
-            border-top: .2rem solid black;
-            border-right: .2rem solid black;
-            border-left: .2rem solid black;
+            border: .2rem solid black;
             color:black;
             background-color:rgb(190, 190, 190);
-
+            filter:blur(.3rem);
             
             @media @tablet{  
                 width: 50%;
-                border-top: .2rem solid black;
-                border-right: .2rem solid black;
-                border-left: 0 solid black;
+                border: .2rem solid black;
             }
             @media @desktop{
                 padding: 15rem 4rem 10rem 4rem;
@@ -86,178 +82,169 @@
                 
             }
         }
-        .box-1{
-            @media @tablet{
-                
-            }
-        }
         .box-1:hover{
-            transition-duration: 2s;
-            text-shadow: .15rem .15rem black;
-            background-image: url("../img/builder.jpg");
-            color:white;
-            background-position: center;
-            background-repeat: no-repeat;
-            @media @tablet{
-                transform:scaleX(1.2);  
-                transform-origin: left; 
-                transition-duration: 1s;
+            filter:blur(0);
+        }
+        .box-2:hover{
+            filter:blur(0);
+        }
+        .box-3:hover{
+            filter:blur(0);
+        }
+        .box-4:hover{
+            filter:blur(0);
+        }
+        .box-5:hover{
+            filter:blur(0);
+        }
+        .box-6:hover{
+            filter:blur(0);
+        }
+       /*
+        .box-1:hover{
+            // transition-duration: 2s;
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/builder.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: left; 
+            //     transition-duration: 1s;
 
-            } 
-            @media @desktop{
-                transform:scaleX(1.5);  
-                transform-origin: left; 
-            }
+            // } 
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: left; 
+            // }
             h2{ 
                 border-bottom: .2rem solid white;
             }
         }
-        .box-2{
-            @media @tablet{
-                
-            }
-        }
-        .box-2:hover{
-            transition-duration: 2s;
-
-            text-shadow: .15rem .15rem black;
-            background-image: url("../img/worker.jpg");
-            color:white;
-            background-position: center;
-            background-repeat: no-repeat;
-            @media @tablet{
-                transform:scaleX(1.2);  
-                transform-origin: right; 
-                transition-duration: 1s;
-
-            } 
-            @media @desktop{
-                transform:scaleX(1.5);  
-                transform-origin: center; 
-
-            } 
-            h2{
-                border-bottom: .2rem solid white;
-
-            }
-        }
-        .box-3{
-            @media @tablet{
-                
-            }
-        }
-        .box-3:hover{
-            transition-duration: 2s;
-
-            text-shadow: .15rem .15rem black;
-            background-image: url("../img/sky.jpg");
-            color:white;
-            background-position: center;
-            background-repeat: no-repeat;
-            h2{
-                border-bottom: .2rem solid white;
-
-            }
-            @media @tablet{
-                transform:scaleX(1.2);  
-                transform-origin: left; 
-                transition-duration: 1s;
-
-            }  
-            @media @desktop{
-                transform:scaleX(1.5);  
-                transform-origin: right; 
-            }
-        }
-        .box-4{
-            @media @tablet{
-                
-            }
-        }
-        .box-4:hover{
-            transition-duration: 2s;
-
-            text-shadow: .15rem .15rem black;
-            background-image: url("../img/auto.jpg");
-            color:white;
-            background-position: center;
-            background-repeat: no-repeat;
-            h2{
-                border-bottom: .2rem solid white;
-
-            }
-            @media @tablet{
-                transform:scaleX(1.2);  
-                transform-origin: right; 
-                transition-duration: 1s;
-
-            }  
-            @media @desktop{
-                transform:scaleX(1.5);  
-                transform-origin: left; 
-            }
-        }
-        .box-5{
-            @media @tablet{
-                
-            }
-        }
-        .box-5:hover{
-            transition-duration: 2s;
-
-            text-shadow: .15rem .15rem black;
-            background-image: url("../img/weld.jpg");
-            color:white;
-            background-position: center;
-            background-repeat: no-repeat;
-            h2{
-                border-bottom: .2rem solid white;
-
-            }
-            @media @tablet{
-                transform:scaleX(1.2);  
-                transform-origin: left; 
-                transition-duration: 1s;
-
-            }  
-            @media @desktop{
-                transform:scaleX(1.5); 
-                transform-origin: center; 
- 
-            }
-        }
-        .box-6{
-            @media @tablet{
-                
-            }
-        }
-            .box-6:hover{
-                transition-duration: 2s;
-                text-shadow: .15rem .15rem black;
-                background-image: url("../img/construction.jpg");
-                color:white;
-                background-position: center;
-                background-repeat: no-repeat;
-                
-                h2{
-                    border-bottom: .2rem solid white;
-    
-                }
-                
-            @media @tablet{
-                border-bottom: 0 solid black;
-                transform:scaleX(1.2);  
-                transform-origin: right;
-                transition-duration: 1s;
-
-            }
-            @media @desktop{
-                transform:scaleX(1.5);  
-                transform-origin: right; 
-            }
-        } 
         
+        .box-2:hover{
+            // transition-duration: 2s;
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/worker.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: right; 
+            //     transition-duration: 1s;
+
+            // } 
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: center; 
+
+            // } 
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+        }
        
+        .box-3:hover{
+            // transition-duration: 2s;
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/sky.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: left; 
+            //     transition-duration: 1s;
+
+            // }  
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: right; 
+            // }
+        }
+       
+        .box-4:hover{
+            // transition-duration: 2s;
+
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/auto.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: right; 
+            //     transition-duration: 1s;
+
+            // }  
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: left; 
+            // }
+        }
+        
+        .box-5:hover{
+            // transition-duration: 2s;
+
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/weld.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: left; 
+            //     transition-duration: 1s;
+
+            // }  
+            // @media @desktop{
+            //     transform:scaleX(1.5); 
+            //     transform-origin: center; 
+ 
+            // }
+        }
+        
+            .box-6:hover{
+                // transition-duration: 2s;
+                // text-shadow: .15rem .15rem black;
+                // background-image: url("../img/construction.jpg");
+                // color:white;
+                // background-position: center;
+                // background-repeat: no-repeat;
+                
+                // h2{
+                //     border-bottom: .2rem solid white;
+    
+                // }
+                
+            // @media @tablet{
+            //     border-bottom: 0 solid black;
+            //     transform:scaleX(1.2);  
+            //     transform-origin: right;
+            //     transition-duration: 1s;
+
+            // }
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: right; 
+            // }
+        } 
+       */
     }
 .image-container{
     background-image: url("../img/bottom-lake.jpg");

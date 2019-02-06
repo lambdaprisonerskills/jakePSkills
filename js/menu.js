@@ -9,7 +9,6 @@ const toggleMenu = () => {
     const x_it = document.querySelector('.exit');
     x_it.addEventListener('click', toggleMenu);
     
-
     const topMenu = () => {
         window.scrollTo({
             top: 0,
@@ -18,3 +17,5 @@ const toggleMenu = () => {
     };
     const to_top = document.querySelector('.toTop');
     to_top.addEventListener('click', topMenu);
+
+    
