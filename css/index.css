@@ -184,6 +184,7 @@ header .menu {
   height: 100vh;
   z-index: 10;
   background-color: rgba(79, 79, 79, 0.906);
+  overflow: auto;
 }
 header .menu ul li {
   font-size: 3rem;
@@ -221,6 +222,11 @@ header .menu .center button a {
   text-decoration: none;
   color: black;
 }
+header ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
 header .menu--open {
   display: block;
 }
@@ -238,9 +244,11 @@ header .menu--open {
   color: white;
 }
 .prison-body .page-title h1 {
-  border-bottom: 0.2rem solid white;
+  border-bottom: 1rem solid white;
+  border-top: 1rem solid white;
   margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
+  font-weight: bold;
 }
 .prison-body .page-title button {
   margin-top: 4rem;
@@ -432,7 +440,7 @@ header .menu--open {
   padding: 10rem 3rem 10rem 4rem;
   width: 100%;
   flex-direction: column;
-  border: 0.2rem solid black;
+  border: 0.4rem solid black;
   color: black;
   background-color: #bebebe;
   filter: blur(0.3rem);
@@ -440,10 +448,9 @@ header .menu--open {
 @media (min-width:800px) {
   .prison-body .prison-blocks .box {
     width: 50%;
-    border: 0.2rem solid black;
   }
 }
-@media (min-width:1400px) {
+@media (min-width:1600px) {
   .prison-body .prison-blocks .box {
     padding: 15rem 4rem 10rem 4rem;
     width: 33.3333333%;
@@ -452,9 +459,17 @@ header .menu--open {
 .prison-body .prison-blocks .box h2 {
   font-size: 2.8rem;
   padding-bottom: 2rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.5rem solid #df8e02;
   margin-bottom: 2rem;
   width: 70%;
+}
+.prison-body .prison-blocks .box p a {
+  text-decoration: none;
+  color: #df8e02;
+}
+.prison-body .prison-blocks .box p span {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 .prison-body .prison-blocks .box-1:hover {
   filter: blur(0);
@@ -493,14 +508,14 @@ header .menu--open {
   width: 80%;
   background-color: #bebebe;
   z-index: 2;
-  border-right: 0.2rem solid black;
-  border-left: 0.2rem solid black;
+  border-right: 5rem solid white;
+  border-left: 5rem solid white;
 }
 .prison-body .bottom-p h2 {
   width: 30%;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 1rem solid white;
 }
 @media (min-width:800px) {
   .prison-body .bottom-p h2 {
