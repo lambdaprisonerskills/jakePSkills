@@ -522,9 +522,6 @@ header .menu--open {
     text-align: center;
   }
 }
-.prison-body .bottom-p p span {
-  list-style-type: square;
-}
 .prison-body .bottom-p button {
   height: 6rem;
   width: 10rem;
