@@ -242,15 +242,15 @@ header .menu--open {
 }
 .prison-body .title-image {
   background-image: url("../img/road.jpg");
-  background-size: auto;
   background-position: center;
+  background-size: cover;
 }
 .prison-body .page-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10rem 4rem 6rem;
+  padding: 15rem 4rem 6rem;
   color: white;
 }
 .prison-body .page-title h1 {
@@ -274,13 +274,18 @@ header .menu--open {
   border: 0.2rem solid white;
   color: white;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .prison-body .page-title {
     width: 75%;
     margin: 0 auto;
   }
   .prison-body .page-title a {
     width: 40%;
+  }
+}
+@media (min-width:1600px) {
+  .prison-body .page-title {
+    padding: 18rem 4rem 10rem;
   }
 }
 .prison-body .prison-blocks {
@@ -430,7 +435,7 @@ header .menu--open {
         } 
        */
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .prison-body .prison-blocks {
     display: flex;
     flex-wrap: wrap;
@@ -446,7 +451,7 @@ header .menu--open {
   color: black;
   background-color: #73acda;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .prison-body .prison-blocks .box {
     width: 50%;
     filter: blur(0.15rem);
@@ -491,13 +496,16 @@ header .menu--open {
 .prison-body .prison-blocks .box-6:hover {
   filter: blur(0);
 }
+.prison-body .prison-blocks .color-on {
+  color: white;
+}
 .prison-body .image-container {
   background-image: url("../img/bottom-lake.jpg");
   background-position: center;
   background-size: cover;
   border-top: 0.2rem solid black;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .prison-body .image-container {
     border-top: 0rem solid black;
   }
@@ -520,7 +528,7 @@ header .menu--open {
   border-bottom: 0.7rem dashed white;
   text-shadow: 0 0 0.2rem #73acda;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .prison-body .bottom-p h2 {
     text-align: center;
   }
@@ -544,7 +552,7 @@ header .menu--open {
   color: white;
   border: 0.2rem solid white;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   .prison-body .bottom-p {
     width: 60%;
     display: flex;
@@ -575,7 +583,7 @@ footer .icon i:hover {
   background-color: black;
   color: #73acda;
 }
-@media (min-width:800px) {
+@media (min-width:1000px) {
   footer .icon {
     width: 40%;
     border-radius: 1rem;
