@@ -1,39 +1,98 @@
 header{
     width: 100%;
-    height: 4rem;
-    background-color: grey;
+    height: 7rem;
+    background-color: rgba(123, 123, 123, 0.8);
     color: white;
     display: flex;
     position: fixed;
     top: 0;
     z-index: 10;
-    flex-direction: row-reverse;
+    justify-content: space-between;
     margin: auto 0;
+    align-items: center;
+    .topArrow{
+        margin-left:2rem;
+        cursor: pointer;
+        color:rgba(115, 172, 218, 0.4);
+    }
     img{
-        width:6%;
+        width:4rem;
         margin-right: 2rem;
         cursor: pointer;
+        padding:1rem 0; 
     }
+    
     .menu{
+        top:0;
         display:none;
         position: fixed;
-        min-width: 500px;
+        min-width: 100%;
         height: 100vh; 
         z-index: 10;
-        background-color: rgba(79, 79, 79, 0.906);
+        background-color: rgba(79, 79, 79, 0.9);
+        overflow: auto;
+        
         ul li{
-            list-style-type: none;
-            font-size: 32px;
-            padding: 30px 0;
+            font-size: 2rem;
+            padding: 2rem 0;
             text-align: center;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color:white;
+            }
+            @media @tablet{
+                font-size: 3rem;
+                padding: 3rem 0;
+            }
+        }
+        li:hover{
+            background-color: black;
+            
         }
         .exit{
            display: flex;
             flex-direction: row-reverse;
             margin:2rem 4rem 0 0;
             cursor: pointer;
+            font-size:2.2rem;
+        }
+        .center{
+            display:flex;
+            text-align:center;
+            padding: 30px 0;
+            a{
+                text-decoration: none;
+                color:black;
+                width:100%;
+            
+            button{
+                margin:0 auto;
+                height:4rem;
+                font-size: 2rem;
+                width:30%;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: white;
+                @media @tablet{
+                    height:6rem;
+                    font-size: 3rem;
+                    width:40%;
+
+                }
+                }
+                button:hover{
+                    background-color:black;
+                    border:.2rem solid @main-blue;
+                    color:@main-blue;
+                }
+            }
         }
     }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; 
+     }
     .menu--open {
         display: block;
       }

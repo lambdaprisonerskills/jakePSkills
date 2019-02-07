@@ -129,14 +129,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: sans-serif, cursive;
 }
 h1 {
   font-size: 4rem;
@@ -145,118 +145,479 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .container {
-  min-width: 500px;
+  min-width: 300px;
   width: 100%;
   margin: 0 auto;
 }
 header {
   width: 100%;
-  height: 4rem;
-  background-color: grey;
+  height: 7rem;
+  background-color: rgba(123, 123, 123, 0.8);
   color: white;
   display: flex;
   position: fixed;
   top: 0;
   z-index: 10;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   margin: auto 0;
+  align-items: center;
+}
+header .topArrow {
+  margin-left: 2rem;
+  cursor: pointer;
+  color: rgba(115, 172, 218, 0.4);
 }
 header img {
-  width: 6%;
+  width: 4rem;
   margin-right: 2rem;
   cursor: pointer;
+  padding: 1rem 0;
 }
 header .menu {
+  top: 0;
   display: none;
   position: fixed;
-  min-width: 500px;
+  min-width: 100%;
   height: 100vh;
   z-index: 10;
-  background-color: rgba(79, 79, 79, 0.906);
+  background-color: rgba(79, 79, 79, 0.9);
+  overflow: auto;
 }
 header .menu ul li {
-  list-style-type: none;
-  font-size: 32px;
-  padding: 30px 0;
+  font-size: 2rem;
+  padding: 2rem 0;
   text-align: center;
+  cursor: pointer;
+}
+header .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width:1000px) {
+  header .menu ul li {
+    font-size: 3rem;
+    padding: 3rem 0;
+  }
+}
+header .menu li:hover {
+  background-color: black;
 }
 header .menu .exit {
   display: flex;
   flex-direction: row-reverse;
   margin: 2rem 4rem 0 0;
   cursor: pointer;
+  font-size: 2.2rem;
+}
+header .menu .center {
+  display: flex;
+  text-align: center;
+  padding: 30px 0;
+}
+header .menu .center a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+header .menu .center a button {
+  margin: 0 auto;
+  height: 4rem;
+  font-size: 2rem;
+  width: 30%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+@media (min-width:1000px) {
+  header .menu .center a button {
+    height: 6rem;
+    font-size: 3rem;
+    width: 40%;
+  }
+}
+header .menu .center a button:hover {
+  background-color: black;
+  border: 0.2rem solid #73acda;
+  color: #73acda;
+}
+header ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 header .menu--open {
   display: block;
 }
 .prison-body {
-  display: flex-column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.prison-body .title-image {
+  background-image: url("../img/road.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .prison-body .page-title {
-  margin: 6rem 4rem;
+  text-align: center;
+  padding: 15rem 4rem 6rem;
+  color: white;
 }
 .prison-body .page-title h1 {
-  border-bottom: 0.2rem solid black;
+  border-bottom: 1rem solid #73acda;
+  border-top: 1rem solid #73acda;
   margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
+  font-weight: bold;
 }
 .prison-body .page-title button {
-  height: 4rem;
-  width: 50%;
+  margin-top: 4rem;
+  height: 6rem;
+  width: 22rem;
   font-size: 1.8rem;
   border-radius: 10px;
+  cursor: pointer;
+  border: 0.2rem solid black;
+  background-color: transparent;
+}
+.prison-body .page-title button:hover {
+  border: 0.2rem solid white;
+  color: white;
+}
+@media (min-width:1000px) {
+  .prison-body .page-title {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .prison-body .page-title h1 {
+    font-size: 5rem;
+  }
+  .prison-body .page-title p {
+    font-size: 2.2rem;
+  }
+  .prison-body .page-title a {
+    width: 40%;
+  }
+  .prison-body .page-title a button {
+    font-size: 2.2rem;
+    width: 45%;
+  }
+}
+@media (min-width:1600px) {
+  .prison-body .page-title {
+    padding: 18rem 4rem 10rem;
+  }
+  .prison-body .page-title h1 {
+    font-size: 8rem;
+  }
+  .prison-body .page-title a button {
+    width: 60%;
+  }
 }
 .prison-body .prison-blocks {
-  margin: 1rem 0;
+  /*
+        .box-1:hover{
+            // transition-duration: 2s;
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/builder.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: left; 
+            //     transition-duration: 1s;
+
+            // } 
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: left; 
+            // }
+            h2{ 
+                border-bottom: .2rem solid white;
+            }
+        }
+        
+        .box-2:hover{
+            // transition-duration: 2s;
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/worker.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: right; 
+            //     transition-duration: 1s;
+
+            // } 
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: center; 
+
+            // } 
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+        }
+       
+        .box-3:hover{
+            // transition-duration: 2s;
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/sky.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: left; 
+            //     transition-duration: 1s;
+
+            // }  
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: right; 
+            // }
+        }
+       
+        .box-4:hover{
+            // transition-duration: 2s;
+
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/auto.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: right; 
+            //     transition-duration: 1s;
+
+            // }  
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: left; 
+            // }
+        }
+        
+        .box-5:hover{
+            // transition-duration: 2s;
+
+            // text-shadow: .15rem .15rem black;
+            // background-image: url("../img/weld.jpg");
+            // color:white;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // h2{
+            //     border-bottom: .2rem solid white;
+
+            // }
+            // @media @tablet{
+            //     transform:scaleX(1.2);  
+            //     transform-origin: left; 
+            //     transition-duration: 1s;
+
+            // }  
+            // @media @desktop{
+            //     transform:scaleX(1.5); 
+            //     transform-origin: center; 
+ 
+            // }
+        }
+        
+            .box-6:hover{
+                // transition-duration: 2s;
+                // text-shadow: .15rem .15rem black;
+                // background-image: url("../img/construction.jpg");
+                // color:white;
+                // background-position: center;
+                // background-repeat: no-repeat;
+                
+                // h2{
+                //     border-bottom: .2rem solid white;
+    
+                // }
+                
+            // @media @tablet{
+            //     border-bottom: 0 solid black;
+            //     transform:scaleX(1.2);  
+            //     transform-origin: right;
+            //     transition-duration: 1s;
+
+            // }
+            // @media @desktop{
+            //     transform:scaleX(1.5);  
+            //     transform-origin: right; 
+            // }
+        } 
+       */
+}
+@media (min-width:1000px) {
+  .prison-body .prison-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 0.2rem solid #7b7b7b;
+    border-bottom: 0.2rem solid #7b7b7b;
+  }
 }
 .prison-body .prison-blocks .box {
-  padding: 10rem 20rem 10rem 4rem;
+  padding: 7rem 3rem 7rem 4rem;
   width: 100%;
   flex-direction: column;
-  border-top: 0.2rem solid black;
-  border-right: 0.2rem solid black;
-  border-left: 0.2rem solid black;
+  border: 0.2rem solid #7b7b7b;
+  color: black;
+  background-color: #73acda;
+}
+@media (min-width:1000px) {
+  .prison-body .prison-blocks .box {
+    width: 50%;
+    filter: blur(0.15rem);
+  }
+}
+@media (min-width:1600px) {
+  .prison-body .prison-blocks .box {
+    padding: 10rem 4rem 10rem 4rem;
+    width: 33.3333333%;
+  }
 }
 .prison-body .prison-blocks .box h2 {
   font-size: 2.8rem;
   padding-bottom: 2rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.5rem solid white;
   margin-bottom: 2rem;
+  width: 70%;
 }
-.prison-body .prison-blocks .box-6 {
-  border-bottom: 0.2rem solid black;
+.prison-body .prison-blocks .box p a {
+  text-decoration: none;
+  color: white;
+}
+.prison-body .prison-blocks .box p a:hover {
+  text-decoration: underline;
+}
+.prison-body .prison-blocks .box p span {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.prison-body .prison-blocks .box:hover {
+  filter: blur(0);
+  box-shadow: 1rem 0 0 white;
+}
+.prison-body .prison-blocks .color-on {
+  color: white;
+}
+.prison-body .image-container {
+  background-image: url("../img/bottom-lake.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top: 0.2rem solid #7b7b7b;
+}
+@media (min-width:1000px) {
+  .prison-body .image-container {
+    border-top: 0rem solid #7b7b7b;
+  }
 }
 .prison-body .bottom-p {
-  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 80%;
+  background-color: #7b7b7b;
+  z-index: 2;
+  border-right: 0.4rem solid #73acda;
+  border-left: 0.4rem solid #73acda;
 }
 .prison-body .bottom-p h2 {
-  width: 20%;
+  width: 100%;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.7rem dashed white;
+  text-shadow: 0 0 0.2rem #73acda;
+}
+@media (min-width:1000px) {
+  .prison-body .bottom-p h2 {
+    text-align: center;
+  }
+}
+.prison-body .bottom-p p {
+  text-shadow: 0 0 0.001rem #73acda;
+}
+.prison-body .bottom-p p i {
+  color: white;
 }
 .prison-body .bottom-p button {
-  height: 4rem;
-  width: 50%;
-  font-size: 1.8rem;
+  height: 6rem;
+  width: 17rem;
+  font-size: 1.6rem;
   border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  margin-top: 4rem;
+  border: 0.2rem solid black;
+}
+.prison-body .bottom-p button:hover {
+  color: #73acda;
+  border: 0.2rem solid #73acda;
+  background-color: transparent;
+}
+@media (min-width:1000px) {
+  .prison-body .bottom-p {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prison-body .bottom-p button {
+    width: 40%;
+  }
 }
 footer {
   text-align: center;
+  padding: 3rem 0;
+  background-color: black;
+}
+footer .icon {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: white;
+}
+footer .icon i {
+  color: black;
+  padding: 2rem;
+}
+footer .icon i:hover {
+  box-shadow: 0 0 2rem black;
+  text-shadow: 0 0 1rem #73acda;
+  color: #73acda;
+}
+@media (min-width:1000px) {
+  footer .icon {
+    width: 30%;
+    border-radius: 1rem;
+    justify-content: space-around;
+  }
+}
+footer p {
+  margin-top: 2rem;
+  color: white;
 }
