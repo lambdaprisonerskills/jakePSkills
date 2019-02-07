@@ -17,6 +17,8 @@ const toggleMenu = () => {
     };
     const to_top = document.querySelector('.toTop');
     to_top.addEventListener('click', topMenu);
+    const arrow_top = document.querySelector('.topArrow');
+    arrow_top.addEventListener('click', topMenu);
 
     // When h2 tag is clicked the box text color toggles white and black 
     class Box {

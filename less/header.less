@@ -1,15 +1,19 @@
 header{
     width: 100%;
     height: 7rem;
-    background-color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(123, 123, 123, 0.8);
     color: white;
     display: flex;
     position: fixed;
     top: 0;
     z-index: 10;
-    flex-direction: row-reverse;
+    justify-content: space-between;
     margin: auto 0;
-    
+    align-items: center;
+    .topArrow{
+        margin-left:2rem;
+        cursor: pointer;
+    }
     img{
         width:4rem;
         margin-right: 2rem;
@@ -23,7 +27,7 @@ header{
         min-width: 100%;
         height: 100vh; 
         z-index: 10;
-        background-color: rgba(79, 79, 79, 0.906);
+        background-color: rgba(79, 79, 79, 0.9);
         overflow: auto;
         
         ul li{
