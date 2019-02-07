@@ -228,6 +228,7 @@ header .menu .center a button {
   border-radius: 10px;
   cursor: pointer;
   height: 6rem;
+  background-color: white;
 }
 header .menu .center a button:hover {
   background-color: black;
@@ -237,7 +238,6 @@ header .menu .center a button:hover {
 header ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-  /* make scrollbar transparent */
 }
 header .menu--open {
   display: block;
