@@ -14,9 +14,6 @@ const toggleMenu = () => {
             top: 0,
             behavior: 'smooth'
           });
-          setTimeout(window.scrollTo({
-
-          }),1000);
     };
     const to_top = document.querySelector('.toTop');
     to_top.addEventListener('click', topMenu);
