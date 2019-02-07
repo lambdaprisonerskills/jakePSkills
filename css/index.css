@@ -596,7 +596,7 @@ footer {
 }
 footer .icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   cursor: pointer;
   background-color: white;
@@ -606,13 +606,15 @@ footer .icon i {
   padding: 2rem;
 }
 footer .icon i:hover {
-  background-color: black;
+  box-shadow: 0 0 2rem black;
+  text-shadow: 0 0 1rem #73acda;
   color: #73acda;
 }
 @media (min-width:1000px) {
   footer .icon {
-    width: 40%;
+    width: 30%;
     border-radius: 1rem;
+    justify-content: space-around;
   }
 }
 footer p {

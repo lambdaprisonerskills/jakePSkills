@@ -3,9 +3,8 @@ footer{
     padding: 3rem 0;
     background-color:black; 
     .icon{
-        
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 0 auto;
         cursor: pointer;
         background-color:white;
@@ -15,12 +14,15 @@ footer{
             padding:2rem;
         }
         i:hover{
-            background-color: black;
+            box-shadow:0 0 2rem black;
+            text-shadow:0 0 1rem @main-blue;
             color:rgb(115, 172, 218);
         }
         @media @tablet {
-            width:40%;
+            width:30%;
             border-radius: 1rem;
+            justify-content: space-around;
+
         }
     }
     p{
