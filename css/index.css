@@ -175,6 +175,7 @@ header {
 header .topArrow {
   margin-left: 2rem;
   cursor: pointer;
+  color: rgba(115, 172, 218, 0.4);
 }
 header img {
   width: 4rem;
@@ -216,6 +217,7 @@ header .menu .exit {
   flex-direction: row-reverse;
   margin: 2rem 4rem 0 0;
   cursor: pointer;
+  font-size: 2.2rem;
 }
 header .menu .center {
   display: flex;
@@ -287,7 +289,6 @@ header .menu--open {
   background-color: transparent;
 }
 .prison-body .page-title button:hover {
-  background-color: black;
   border: 0.2rem solid white;
   color: white;
 }
@@ -472,15 +473,15 @@ header .menu--open {
   .prison-body .prison-blocks {
     display: flex;
     flex-wrap: wrap;
-    border-left: 0.2rem solid black;
-    border-bottom: 0.2rem solid black;
+    border-left: 0.2rem solid #7b7b7b;
+    border-bottom: 0.2rem solid #7b7b7b;
   }
 }
 .prison-body .prison-blocks .box {
   padding: 7rem 3rem 7rem 4rem;
   width: 100%;
   flex-direction: column;
-  border: 0.2rem solid black;
+  border: 0.2rem solid #7b7b7b;
   color: black;
   background-color: #73acda;
 }
@@ -507,27 +508,16 @@ header .menu--open {
   text-decoration: none;
   color: white;
 }
+.prison-body .prison-blocks .box p a:hover {
+  text-decoration: underline;
+}
 .prison-body .prison-blocks .box p span {
   font-size: 1.2rem;
   font-style: italic;
 }
-.prison-body .prison-blocks .box-1:hover {
+.prison-body .prison-blocks .box:hover {
   filter: blur(0);
-}
-.prison-body .prison-blocks .box-2:hover {
-  filter: blur(0);
-}
-.prison-body .prison-blocks .box-3:hover {
-  filter: blur(0);
-}
-.prison-body .prison-blocks .box-4:hover {
-  filter: blur(0);
-}
-.prison-body .prison-blocks .box-5:hover {
-  filter: blur(0);
-}
-.prison-body .prison-blocks .box-6:hover {
-  filter: blur(0);
+  box-shadow: 1rem 0 0 white;
 }
 .prison-body .prison-blocks .color-on {
   color: white;
@@ -536,11 +526,11 @@ header .menu--open {
   background-image: url("../img/bottom-lake.jpg");
   background-position: center;
   background-size: cover;
-  border-top: 0.2rem solid black;
+  border-top: 0.2rem solid #7b7b7b;
 }
 @media (min-width:1000px) {
   .prison-body .image-container {
-    border-top: 0rem solid black;
+    border-top: 0rem solid #7b7b7b;
   }
 }
 .prison-body .bottom-p {
@@ -574,19 +564,19 @@ header .menu--open {
 }
 .prison-body .bottom-p button {
   height: 6rem;
-  width: 16rem;
-  font-size: 1.8rem;
+  width: 17rem;
+  font-size: 1.6rem;
   border-radius: 10px;
   cursor: pointer;
   background-color: white;
   color: black;
-  border: 0.2rem solid black;
   margin-top: 4rem;
+  border: 0.2rem solid black;
 }
 .prison-body .bottom-p button:hover {
-  background-color: black;
   color: #73acda;
   border: 0.2rem solid #73acda;
+  background-color: transparent;
 }
 @media (min-width:1000px) {
   .prison-body .bottom-p {

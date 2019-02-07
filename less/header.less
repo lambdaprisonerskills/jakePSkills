@@ -13,6 +13,7 @@ header{
     .topArrow{
         margin-left:2rem;
         cursor: pointer;
+        color:rgba(115, 172, 218, 0.4);
     }
     img{
         width:4rem;
@@ -54,6 +55,7 @@ header{
             flex-direction: row-reverse;
             margin:2rem 4rem 0 0;
             cursor: pointer;
+            font-size:2.2rem;
         }
         .center{
             display:flex;
@@ -81,8 +83,8 @@ header{
                 }
                 button:hover{
                     background-color:black;
-                    border:.2rem solid rgb(115, 172, 218);
-                    color:rgb(115, 172, 218);
+                    border:.2rem solid @main-blue;
+                    color:@main-blue;
                 }
             }
         }

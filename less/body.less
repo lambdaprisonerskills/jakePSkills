@@ -33,7 +33,6 @@
             background-color: transparent;
         }
         button:hover{
-            background-color:black;
             border:.2rem solid white;
             color:white;
         }
@@ -70,17 +69,17 @@
         @media @tablet{
             display:flex;
             flex-wrap: wrap;
-            border-left: .2rem solid black;
-            border-bottom: .2rem solid black;
+            border-left: .2rem solid @grey;
+            border-bottom: .2rem solid @grey;
         }
         .box{
             padding: 7rem 3rem 7rem 4rem;
             width: 100%;
             flex-direction: column;
-            border: .2rem solid black;
+            border: .2rem solid @grey;
             color:black;
-            background-color:rgb(115, 172, 218);
-           
+            background-color:@main-blue;
+            
             
             @media @tablet{  
                 width: 50%;
@@ -102,29 +101,19 @@
                 text-decoration: none;
                 color:white;
             }
+            p a:hover{
+                text-decoration: underline;
+            }
             p span{
                 font-size: 1.2rem;
                 font-style: italic; 
             }
         }
-        .box-1:hover{
+        .box:hover{
             filter:blur(0);
+            box-shadow: 1rem 0 0 white;
         }
-        .box-2:hover{
-            filter:blur(0);
-        }
-        .box-3:hover{
-            filter:blur(0);
-        }
-        .box-4:hover{
-            filter:blur(0);
-        }
-        .box-5:hover{
-            filter:blur(0);
-        }
-        .box-6:hover{
-            filter:blur(0);
-        }
+
         .color-on{
             color:white;
         }
@@ -278,9 +267,9 @@
     background-image: url("../img/bottom-lake.jpg");
     background-position: center;
     background-size: cover;
-    border-top: .2rem solid black;
+    border-top: .2rem solid @grey;
     @media @tablet {
-        border-top: .0rem solid black;
+        border-top: .0rem solid @grey;
 
     }
 
@@ -291,23 +280,23 @@
         margin: 0 auto;
         padding: 4rem;
         width:80%;
-        background-color:rgb(123, 123, 123);
+        background-color:@grey;
         z-index: 2;
-        border-right: .4rem solid rgb(115, 172, 218);
-        border-left: .4rem solid rgb(115, 172, 218);
+        border-right: .4rem solid @main-blue;
+        border-left: .4rem solid @main-blue;
 
         h2{
             width:100%;
             padding-bottom:2rem;
             margin-bottom:2rem;
             border-bottom:.7rem dashed white;
-            text-shadow: 0 0 .2rem rgb(115, 172, 218);
+            text-shadow: 0 0 .2rem @main-blue;
             @media @tablet{
                 text-align: center;            
             }
         }
         p{
-            text-shadow: 0 0 .001rem rgb(115, 172, 218);
+            text-shadow: 0 0 .001rem @main-blue;
             i{
                 color:white;
             }
@@ -315,21 +304,20 @@
         
         button{
             height:6rem;
-            width: 16rem;
-            font-size: 1.8rem;
+            width: 17rem;
+            font-size: 1.6rem;
             border-radius: 10px;
             cursor: pointer;
             background-color:white;
             color:black; 
-            border:.2rem solid black;
             margin-top:4rem;
+            border:.2rem solid black;
 
         }
         button:hover{
-            background-color:black;
-            color:rgb(115, 172, 218); 
-            border:.2rem solid rgb(115, 172, 218);
-
+            color:@main-blue; 
+            border:.2rem solid @main-blue;
+            background-color: transparent;
         }
         
 
